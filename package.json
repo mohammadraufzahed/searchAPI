@@ -1,0 +1,23 @@
+{
+  "name": "searchAPI",
+  "version": "1.0.0",
+  "description": "A simple API to get the search engines results.",
+  "main": "server.js",
+  "repository": "https://github.com/mohammadraufzahed/searchAPI",
+  "author": "Mohammad Raufzahed <mohammadraufzahed@protonmail.com>",
+  "license": "GPLv3",
+  "private": false,
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon --watch *.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "fastify": "^3.20.2",
+    "fastify-swagger": "^4.9.1",
+    "jsdom": "^17.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
