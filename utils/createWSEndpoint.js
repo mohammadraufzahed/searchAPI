@@ -2,8 +2,11 @@ const puppeteer = require("puppeteer");
 const path = require("path");
 const fs = require("fs");
 
+// Creating an instance of the browser and saving the browser Endpoint in the JSON file.
 async function createWSEndpoint() {
+  // Path of the cache folder
   const cachPath = path.normalize(__dirname + "/../.cach");
+  // Creating an instance of the browser
   const browser = await puppeteer.launch({
     headless: false,
     userDataDir: cachPath,
@@ -25,7 +28,9 @@ async function createWSEndpoint() {
       "--disable-setuid-sandbox", // same
     ],
   });
+  // Grabbing the browser endpoint
   const browserEndpoint = await browser.wsEndpoint();
+  // Saving the endpoint in the JSON file.
   fs.writeFileSync(
     path.normalize(__dirname + "/../wsEndpoint.json"),
     JSON.stringify({ wsEndpoint: browserEndpoint }),
@@ -34,7 +39,6 @@ async function createWSEndpoint() {
       flag: "w+",
     }
   );
+  // Disconnecting from the browser
   await browser.disconnect();
 }
-
-createWSEndpoint();
