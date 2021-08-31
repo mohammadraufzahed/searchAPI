@@ -714,3 +714,5 @@ FodyWeavers.xsd
 # Additional files built by Visual Studio
 
 # End of https://www.toptal.com/developers/gitignore/api/jetbrains+all,node,yarn,linux,windows,visualstudio,visualstudiocode,macos,vim
+wsEndpoint.json
+.cach

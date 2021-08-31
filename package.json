@@ -12,10 +12,9 @@
     "dev": "nodemon --watch *.js"
   },
   "dependencies": {
-    "axios": "^0.21.1",
     "fastify": "^3.20.2",
     "fastify-swagger": "^4.9.1",
-    "jsdom": "^17.0.0"
+    "puppeteer": "^10.2.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
