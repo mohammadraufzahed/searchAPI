@@ -42,3 +42,5 @@ async function createWSEndpoint() {
   // Disconnecting from the browser
   await browser.disconnect();
 }
+
+module.exports = createWSEndpoint;
