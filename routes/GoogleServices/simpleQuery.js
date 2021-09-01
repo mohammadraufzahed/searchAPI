@@ -1,6 +1,8 @@
 // Simple query options
 const simpleQueryOptions = {
   schema: {
+    description: "Send simple query to the google",
+    tags: ["Google Service"],
     body: {
       type: "object",
       required: ["query"],

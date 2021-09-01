@@ -14,6 +14,14 @@ fastify.register(require("fastify-swagger"), {
     },
   },
   exposeRoute: true,
+  consumes: ["application/json"],
+  produces: ["application/json"],
+  uiConfig: {
+    docExpansion: "full",
+    deepLinking: false,
+  },
+  staticCSP: true,
+  transformStaticCSP: (header) => header,
 });
 
 // Register  the routers
