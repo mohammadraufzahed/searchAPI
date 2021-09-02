@@ -5,7 +5,7 @@
   "main": "server.js",
   "repository": "https://github.com/mohammadraufzahed/searchAPI",
   "author": "Mohammad Raufzahed <mohammadraufzahed@protonmail.com>",
-  "license": "GPLv3",
+  "license": " GPL-3.0-or-later",
   "private": false,
   "scripts": {
     "start": "node server.js",
